@@ -1,0 +1,1 @@
+<button class="border border-gray-200 text-gray-200 hover:border-gray-800 hover:text-gray-800 py-2 uppercase cursor-pointer">{{ $slot }}</button>
