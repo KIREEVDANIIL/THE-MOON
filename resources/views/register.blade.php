@@ -22,21 +22,15 @@
             @csrf
             
             <x-form.div title="Фамилия">
-                <input type="text" name="surname" value="{{ old('surname') }}" 
-                       class="border border-gray-200 p-2 w-full rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                       required autofocus>
+                <input type="text" name="surname" value="{{ old('surname') }}" class="border border-gray-200 p-2 w-full rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent" required autofocus>
             </x-form.div>
             
             <x-form.div title="Имя">
-                <input type="text" name="name" value="{{ old('name') }}" 
-                       class="border border-gray-200 p-2 w-full rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                       required>
+                <input type="text" name="name" value="{{ old('name') }}" class="border border-gray-200 p-2 w-full rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
             </x-form.div>
             
             <x-form.div title="Логин">
-                <input type="text" name="login" value="{{ old('login') }}" 
-                       class="border border-gray-200 p-2 w-full rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                       required>
+                <input type="text" name="login" value="{{ old('login') }}" class="border border-gray-200 p-2 w-full rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
                 @error('login')
                     <x-form.error>{{ $message }}</x-form.error>
                 @enderror
@@ -52,25 +46,19 @@
             </x-form.div>
             
             <x-form.div title="Пароль">
-                <input type="password" name="password" 
-                       class="border border-gray-200 p-2 w-full rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                       required>
+                <input type="password" name="password" class="border border-gray-200 p-2 w-full rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
                 @error('password')
                     <x-form.error>{{ $message }}</x-form.error>
                 @enderror
             </x-form.div>
             
             <x-form.div title="Подтвердите пароль">
-                <input type="password" name="password_confirmation" 
-                       class="border border-gray-200 p-2 w-full rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                       required>
+                <input type="password" name="password_confirmation" class="border border-gray-200 p-2 w-full rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
             </x-form.div>
             
             <x-form.div title="Согласие с правилами регистрации">
                 <label class="flex items-center space-x-2">
-                    <input type="checkbox" name="rules" value="1" 
-                           class="border border-gray-200 rounded focus:ring-2 focus:ring-blue-500"
-                           {{ old('rules') ? 'checked' : '' }}>
+                    <input type="checkbox" name="rules" value="1" class="border border-gray-200 rounded focus:ring-2 focus:ring-blue-500" {{ old('rules') ? 'checked' : '' }}>
                     <span class="text-sm text-gray-600">Я принимаю условия соглашения</span>
                 </label>
                 @error('rules')
@@ -80,7 +68,6 @@
             
             <x-form.button>Зарегистрироваться</x-form.button>
 
-            <!-- Ссылка на вход -->
             <div class="text-center pt-4 border-t border-gray-200">
                 <p class="text-gray-600">
                     Уже есть аккаунт? 
