@@ -3,7 +3,6 @@
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
-// Основные маршруты
 Route::get('/', function () {
     return view('home');
 })->name('home');
@@ -26,7 +25,6 @@ Route::get('/where', function () {
     return view('where');
 })->name('where');
 
-// Аутентификация
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 Route::get('/register', [AuthController::class, 'showRegister'])->name('register');
