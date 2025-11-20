@@ -30,7 +30,6 @@
                 @enderror
             </x-form.div>
 
-            <!-- Запомнить меня -->
             <div class="flex items-center justify-between">
                 <label class="flex items-center space-x-2">
                     <input type="checkbox" name="remember" class="border border-gray-200 rounded focus:ring-2 focus:ring-blue-500">
@@ -40,7 +39,6 @@
 
             <x-form.button>Войти</x-form.button>
 
-            <!-- Ссылка на регистрацию -->
             <div class="text-center pt-4 border-t border-gray-200">
                 <p class="text-gray-600">
                     Нет аккаунта? 
